@@ -14,5 +14,16 @@ const mixedElements = [
   "Hola mundo",
 ];
 function averageWord(list) {
-  // Completar
+  let counter = 0;
+  for (const element of list) {
+    if (typeof element === "string") {
+      counter += element.length; 
+    } else {
+      counter += element; 
+    }
+  }
+  const average = counter / list.length; 
+  console.log(average);
 }
+
+averageWord(mixedElements);

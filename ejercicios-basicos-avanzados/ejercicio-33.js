@@ -18,10 +18,12 @@ const capitals = {
 function getCapital(country) {
   // insert code
   if (capitals[country]) {
-    return `La capital  de ${country} es ${capitals[country]}`;
+    return `La capital de ${country} es ${capitals[country]}.`;
   } else {
-    return `No se logra encontrar información sobre la capital de ${country}`; 
+    return `No tengo información sobre la capital de ${country}.`;
   }
 }
-console.log(getCapital('Spain'));
+
+console.log(getCapital('Spain'));    
+console.log(getCapital('Berlin'));  
 console.log(getCapital('Japan'));
